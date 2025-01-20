@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Whatsapp Clone</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="clone.css">
+</head> 
+<body> 
+    <div class="header"> 
+        <i class="fas fa-arrow-left back-icon"></i> 
+        <div class="profile-pic" style="background-image: url('WhatsApp\ Image\ 2024-06-05\ at\ 14.52.02.jpeg');"></div>
+        <div class="user-info"> 
+            <p class="username">User</p> 
+            <p class="status">Online</p> 
+        </div> 
+        <div class="header-icons"> 
+            <i class="fas fa-video header-icon"></i> 
+            <i class="fas fa-phone header-icon"></i> 
+            <i class="fas fa-ellipsis-v header-icon" onclick="toggleDropdown()"></i> 
+            <div id="dropdownMenu" class="dropdown-menu">
+                <a href="#">View contact</a>
+                <a href="#">Media,links,and docs</a>
+                <a href="#">Search</a>
+                <a href="#">Mute notifications</a>
+                <a href="#">Disappearing messages</a>
+                <a href="#">Wallpaper</a>
+            </div>
+        </div>
+    </div> 
+    <div class="chat-container"> 
+        <div class="encryption-message"> 
+            <span>🔒Messages and calls are end to encrypted .</span> 
+        </div> 
+        <div class="timestamp">9th July</div> 
+        <div class="message sent">
+            Hello<span class="time">03:21</span> 
+        </div> 
+        <div class="message received">
+            Welcome to my whatsapp clone<span class="time">03:24</span> 
+        </div> 
+    </div> 
+    <div class="footer"> 
+        <i class="far fa-smile icon"></i> 
+        <input type="text" placeholder="Message">
+        <i class="fas fa-paperclip icon" onclick="toggleAttachMenu()"></i> 
+        <button><i class="fas fa-microphone"></i></button> 
+    </div> 
+    <div id="attachMenu" class="attach-menu">
+        <div class="attach-row">
+            <div class="attach-item"><i class="fas fa-image"></i>Gallery</div>
+            <div class="attach-item"><i class="fas fa-camera"></i>camera</div>
+            <div class="attach-item"><i class="fas fa-map-marker-alt"></i>Location</div>
+        </div>
+        <div class="attach-row">
+            <div class="attach-item"><i class="fas fa-user"></i>Contact</div>
+            <div class="attach-item"><i class="fas fa-file"></i>Document</div>
+            <div class="attach-item"><i class="fas fa-headphones"></i>Audio</div>
+        </div>
+        <div class="attach-row">
+            <div class="attach-item"><i class="fas fa-poll"></i> Polls</div>
+        </div>
+    </div>
+    <script src="clone.js"></script>
+</body>
+</html>
